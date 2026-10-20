@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./formulaire.css">
+</head>
+<body>
+
+    <section class="main">
+        <div class="form">
+            <h1>Formulaire d'enrégistrement</h1>
+            <p><i>Bienvenue dans le module de gestion des filières.<br> Pour commencer, veuillez renseigner les informations <br> de la nouvelle filière en cliquant sur <br> le bouton ci-dessous</i></p>
+
+             <h2>Nouvelle filière</h2>
+            <form>
+                <label for="name">Nom de la filière</label> <br>
+                <input type="text" id="name" placeholder="Ex: Informatique" required> <br>
+                
+                <label for="code">Code</label> <br>
+                <input type="text" id="code" placeholder="Ex: INF"  required > <br>
+
+                <label for="department">Departement</label> <br>
+                <input type="text" id="department" required> <br>
+
+                 <label for="diplome">Diplôme</label> <br>
+                 <select name="diplome" id="diplome" required>
+                     <option value="">selectionner</option>
+                    <option value="licence">Licence</option>
+                    <option value="bts">BTS</option>
+                 </select> <br>
+
+                        <h2>Responsable filière</h2>
+                 <label for="nom">Nom </label> <br>
+                 <input type="text" id="nom" placeholder="Nom"> <br>
+                 <label for="prenom">Prénom</label> <br>
+                 <input type="text" id="prenom" placeholder="Prenom"> <br>
+                 <button type="submit">Enrégistrer  </button> 
+                 <button type="button" id="ann">Annuler </button>
+
+
+            </form>
+        </div>
+       
+
+    </section>
+
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+<script src="./formulaire.js"></script>
+</body>
+</html>
